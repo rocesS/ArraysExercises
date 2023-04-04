@@ -38,4 +38,12 @@ class Array {
         count--;
     }
 
+    public int indexOf(int item) {
+        for (int i = 1; i < count; i++)
+            if (items[i] == item)
+                return i;
+
+        return -1; // if index doesn't exist
+    }
+
 }
